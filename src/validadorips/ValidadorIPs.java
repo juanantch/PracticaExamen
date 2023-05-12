@@ -42,6 +42,15 @@ public class ValidadorIPs {
         
 
     }
+    
+    /**
+     * El método esIPValida comprueba si una dirección IP es válida o no. Una dirección IP válida es una cadena que tiene cuatro octetos separados por puntos, donde cada octeto es un número entero entre 0 y 255. Si una dirección IP es válida, devuelve true, de lo contrario, devuelve false.
+     * 
+     * @param direccionIP la dirección IP a validar
+     * @return true si la dirección IP es válida, false de lo contrario
+     * @throws NullPointerException si la dirección IP es nula
+     * @throws IllegalArgumentException si la dirección IP es una cadena vacía
+     */
 
     public static boolean esIPValida(String direccionIP) throws NullPointerException {
         String octeto1;
